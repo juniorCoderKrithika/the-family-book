@@ -1,0 +1,37 @@
+<html>
+  <head>
+  <title>
+  "the family book"
+  </title>  
+  </head>
+  <body style="text-align: center;">
+  <h1>
+  Family Book   
+  </h1> 
+  
+       <p id="reason1"></p>  
+   <img id="image1" style="width: 50px;" src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg" >
+    <div>
+        <button type = "button" onClick="nextslide()" >next</button>
+    </div>
+    <audio id ="audio" src = "https://mahdihat791.github.io/v2/test.mp3"></audio>
+  </body> 
+  <script>
+      var reason = [
+    "Kishore kumar",
+    "Bharani",
+    "krithika",
+    "karthik"
+  ];
+  var image = [
+  "https://static.wikia.nocookie.net/dreamworks/images/0/0e/Ted_templeton_boss_baby.png/revision/latest?cb=20170819022542",
+   "https://static.wikia.nocookie.net/dreamworks/images/2/20/Janice_templeton_boss_baby.png/revision/latest?cb=20170819023028",
+    "https://static.wikia.nocookie.net/bossbaby/images/2/2d/Tumblr_ork1fdjyc81tr6wqbo1_1280.png/revision/latest/top-crop/width/360/height/450?cb=20201217062856",
+  "https://static.wikia.nocookie.net/bossbaby/images/f/fd/Timothy_Leslie_Templeton_Pose.png/revision/latest?cb=20201217124219"];
+  var i = 0;
+  function nextslide(){document.getElementById("reason1").innerHTML = reason[i];
+  document.getElementById("image1").src = image[i];
+  i++;
+  document.getElementById("audio").play();}
+  </script> 
+  </html>
